@@ -15,6 +15,15 @@ public class A7Q1 {
     /**
      * @param args the command line arguments
      */
+    public static double circleArea (double radius){
+    //calculate area of circle 
+       double square = Math.pow(radius, 2);
+       double area = Math.PI*square;
+       //send back the answer 
+       return area;
+    
+    }
+    
     public static void main(String[] args) {
         // create a scanner 
         Scanner input = new Scanner(System.in); 
@@ -23,8 +32,8 @@ public class A7Q1 {
         System.out.println("What is the Radius?");
         double rad = input.nextDouble();
         
-        //find the area of circle - 3.14(r)^2
-        double circleArea = (Math.pow(2,rad))* 3.14;
-        System.out.println(circleArea);
+        //Giving the answer to the user 
+        double answer = circleArea(rad);
+        System.out.println(answer);
     }
 }
