@@ -18,7 +18,7 @@ public class A7Q5 {
     public static void chaotic(int N, int A){
         
         int randNum = (int)(Math.random()*(N - A + 1 )) + A;
-        
+        System.out.println(randNum);
     }
     
     
