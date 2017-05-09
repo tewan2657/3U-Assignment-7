@@ -16,12 +16,14 @@ public class A7Q7 {
      * @param args the command line arguments
      */
     public static int firstDigit(int Num){
-        
-        while(Num<=10){
-        int answer = Num / 10;
-        }
-        
-        return 0;
+        //Look through each number until num < 10 which will be the first digit  
+        while(Num>=10){
+        Num = Num / 10;
+    }
+   // Print out the first digit of the number entered by the user  
+        System.out.println("The First Digit is: ");
+        System.out.println(Num);
+        return Num;
     }
     public static void main(String[] args) {
         // create a scanner
@@ -29,9 +31,14 @@ public class A7Q7 {
         
         //asking the user to input a number 
         System.out.println("Input a Number.");
-        int Num = input.nextInt();
+        int Num = Math.abs(input.nextInt());
+        
+        System.out.println("");
         
         
+        int Print = firstDigit(Num);
+        
+       
         
     }
 }
