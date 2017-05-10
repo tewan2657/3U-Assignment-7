@@ -42,6 +42,7 @@ public class A7Q8 {
     //if dates lie between September 16 & December 15 - Fall 
     if(month == 9 && day >=16 || month == 12 && day <= 15 || month == 10 || month == 11){
         String num4 = "Fall.";
+        
         // Return Fall if True 
         return num4;
         

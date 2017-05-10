@@ -30,7 +30,7 @@ public class A7Q6 {
 
         //asking the user to input a number 
         System.out.println("Input a Number.");
-      int Num = input.nextInt();
+        int Num = Math.abs(input.nextInt());
       
       //space
         System.out.println("");

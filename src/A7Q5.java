@@ -20,12 +20,7 @@ public class A7Q5 {
        int randNum = (int)(Math.random()*(N - A + 1 )) + A;
         System.out.println(randNum);
     }
-    
-    
-    
-    
-    
-    
+   
     public static void main(String[] args) {
         //create a scanner 
         Scanner input = new Scanner(System.in);

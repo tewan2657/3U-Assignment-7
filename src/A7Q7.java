@@ -20,6 +20,7 @@ public class A7Q7 {
         while(Num>=10){
         Num = Num / 10;
     }
+        
    // Print out the first digit of the number entered by the user  
         System.out.println("The First Digit is: ");
         System.out.println(Num);
