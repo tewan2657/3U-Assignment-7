@@ -34,10 +34,10 @@ public class A7Q7 {
         System.out.println("Input a Number.");
         int Num = Math.abs(input.nextInt());
         
+        //space
         System.out.println("");
         
-        
-        int Print = firstDigit(Num);
+        firstDigit(Num);
         
        
         

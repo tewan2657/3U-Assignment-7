@@ -15,20 +15,19 @@ public class A7Q9 {
     /**
      * @param args the command line arguments
      */
-   public static int allDigitsOdd(int Num){
-       if(Num == 0.2){
-           System.out.println(Num);
-       }
-      
-       
-       
-      while(Num>=10){
-       Num = Num / 10;   
-      }
-      
-       System.out.println(Num);
-       
-       return 0;
+   public static boolean allDigitsOdd(int Num){
+    while(Num > 0){
+       //find last digit 
+        int lastDigit = Num % 10;
+        //if the remainder of the last digit is 0 - Even 
+        if(lastDigit % 2 == 0){
+            return false;
+        }
+        //if the remainder of the last digit is not 0 - odd 
+        //continue to the next digit in the number
+        Num = Num /10;
+    }
+       return true;
    } 
     
     
@@ -40,9 +39,15 @@ public class A7Q9 {
         
         //asking the user to input a number
         System.out.println("Input a Number");
-        
         int Num = input.nextInt();
      
-        int Print = allDigitsOdd(Num);
+        //Print
+        boolean Print = allDigitsOdd(Num);
+        if(Print == true){
+            System.out.println("True");    
+        }
+        else{
+            System.out.println("False");
+        }
     }
 }
